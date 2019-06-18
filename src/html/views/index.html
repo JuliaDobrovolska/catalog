@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Furniture catalog</title>
+    <link rel="preload" as="style" type="text/css" href="css/login_mob.bundle.css">
+    <link rel="preload" as="style" type="text/css" href="css/login_desk.bundle.css" media="(min-width: 426px)">
+    <link rel="stylesheet" href="css/login_mob.bundle.css">
+    <link rel="stylesheet" href="css/login_desk.bundle.css" media="(min-width: 426px)">
+</head>
+<body>
+    <header class="navbar navbar-expand-sm navbar-dark bg-dark text-uppercase">
+        <a class="navbar-brand" href="index.html">Furniture catalog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">sign in</a>
+                </li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5 d-flex justify-content-center">
+            <div class="card authorization-card">
+                <div class="card-header">
+                    <h3 class="text-light">Sign In</h3>
+                </div>
+                <div class="card-body">
+                    <form class="d-flex flex-column justify-content-between h-100" action="catalog.html">
+                        <div class="input-group form-group">
+                            <input type="email" class="form-control" placeholder="email" required>   
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="password" class="form-control" placeholder="password" required>
+                        </div> 
+                        <div class="form-group d-flex">
+                            <input type="submit" value="Login" class="btn btn-warning">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links text-light">
+                        Don't have an account? <a href="#" class="text-decoration-none"> Sign Up</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script async src="js/main.bundle.js"></script>
+</body>
+</html>
